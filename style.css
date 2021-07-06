@@ -1,0 +1,229 @@
+body {
+    font-family: 'Comfortaa', cursive;
+}
+
+/* CSS HEX */
+
+--fluorescent-blue: #58efecff;
+--middle-blue: #7ccad5ff;
+--wild-blue-yonder: #a0a6beff;
+--opera-mauve: #c481a7ff;
+--violet-red: #e85c90ff;
+
+/* GENERAL CSS */
+
+.btn-1 {
+    color: #202020 !important;
+    border-color: #202020 !important;
+}
+.btn-1:hover {
+    color: #fff !important;
+    border-color: #202020 !important;
+    background-color: #202020;
+}
+.btn-2 {
+    color: #e85c90 !important;
+    border-color: #e85c90 !important;
+}
+.btn-2:hover {
+    color: #fff !important;
+    border-color: #7ccad5ff !important;
+    background-color: #7ccad5ff;
+}
+
+/* NAVBAR SECTION */
+
+.navbar-toggler {
+    outline: none !important;
+}
+.toggler-icon {
+    font-size: 2.5rem;
+    color: #7ccad5ff;
+}
+.nav-link {
+    color: #7ccad5ff;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    font-size: 1.5rem;
+}
+.nav-link:hover {
+    color: #e85c90ff;
+}
+.cart-info-icon {
+    color: #000;
+    cursor: pointer;
+}
+.cart-info {
+    border: 0.1rem solid #202020;
+    color: #202020;
+    border-radius: 0.25rem;
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+}
+.cart-info:hover {
+    background-color: #e85c90ff;
+    border-color: #7ccad5ff;
+    color: #fff;
+}
+.cart-info:hover .cart-info-icon {
+    color: #fff;
+}
+
+/* BANNER SECTION */
+
+.max-height {
+    min-height: calc(100vh - 71px);
+    background-image: url(https://cdn.pixabay.com/photo/2017/01/05/04/51/valentine-1953964_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.banner {
+    color: #e85c90ff;
+    margin-top: -4rem;
+}
+.banner-title {
+    color: #a0a6beff;
+    font-size: 4rem;
+}
+.banner-link {
+    font-size: 1.5rem;
+    color: #202020;
+    border: 0.2rem solid #202020;
+}
+.banner-link:hover {
+    background-color: #e85c90ff;
+    color: aliceblue;
+}
+
+/* ABOUT SECTION  */
+
+.about-img-container {
+    position: relative;
+}
+.about-img-container::before {
+    content: '';
+    position: absolute;
+    top: -1.5rem;
+    left: -1.7rem;
+    width: 100%;
+    height: 100%;
+    outline: 0.5rem solid #E85C90;
+    z-index: -1;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+.about-img-container:hover:before {
+    top: 0;
+    left: 0;
+}
+
+/* STORE SECTION  */
+
+#store {
+    background-color: #f5f5f5;
+}
+.search-box {
+    background-color: #E85C90;
+}
+.single-item {
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.single-item:hover {
+    -webkit-box-shadow: 0 10px 15px #E85C90;
+    box-shadow: 10px 10px 5px #E85C90;
+}
+.img-container {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.store-img {
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.img-container:hover .store-img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.store-item-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.7rem;
+    background-color: #7CCAD5;
+    border-top-left-radius: 1rem;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    -webkit-transform: translate(100%, 100%);
+    transform: translate(100%, 100%);
+}
+.img-container:hover .store-item-icon {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+.store-item-icon:hover {
+    color: aliceblue;
+}
+
+/* SERVICE SECTION  */
+
+#services {
+    background-image: url(https://cdn.pixabay.com/photo/2019/02/08/22/28/valentines-day-3984154_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container-service {
+    background-color: #f5f5f5;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CART SECTION */
+
+.cart {
+    position: absolute;
+    min-height: 160px;
+    min-height: 10rem;
+    background: rgba(255, 255, 255, 0.5);
+    top: 0;
+    right: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 0;
+    overflow: hidden;
+}
+.show-cart {
+    width: 288px;
+    width: 18rem;
+    padding: 32px 24px;
+    padding: 2rem 1.5rem;
+    -webkit-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+}
+.cart-item-remove {
+    color: #ef7998;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.cart-item {
+    -webkit-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+}
+.cart-item-remove:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    color: #000;
+}
+.cart-item-price {
+    font-size: 12.8px;
+    font-size: 0.8rem;
+}
